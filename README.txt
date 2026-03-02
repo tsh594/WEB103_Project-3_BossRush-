@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-[Video Walkthrough (Imgur)](https://imgur.com/CweCrzz)
+[![Video Walkthrough](https://i.imgur.com/CweCrzz.gif)](https://imgur.com/CweCrzz)
 
 ## Notes
 
