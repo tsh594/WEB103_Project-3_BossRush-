@@ -2,138 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Boss Lore | BossRush</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="/style.css">
-    <style>
-        /* body background is now set in style.css */
-        html, body {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #01010a 70%, #1a0033 100%);
-        }
-        main.container {
-            background: rgba(5,5,16,1);
-            border-radius: 18px;
-            box-shadow: 0 0 32px 0 #00f2ff44, 0 0 8px #ff00cc44;
-            padding: 3rem 2.5rem;
-            margin-bottom: 3rem;
-        }
-        .portrait-frame {
-            border: 3px solid #00f2ff;
-            box-shadow: 0 0 40px 0 #00f2ff, 0 0 16px #ff00cc;
-            border-radius: 18px;
-            overflow: hidden;
-            background: rgba(0,0,0,0.7);
-            line-height: 0;
-        }
-        .portrait-frame img {
-            width: 100%;
-            height: auto;
-            display: block;
-            filter: saturate(1.2) contrast(1.1) drop-shadow(0 0 16px #00f2ff88);
-        }
-        .difficulty-tag {
-            background: #181c24;
-            border-radius: 7px;
-            font-size: 1.02rem;
-            font-weight: 700;
-            display: inline-block;
-            margin-bottom: 1.1rem;
-            letter-spacing: 2px;
-            padding: 5px 18px 4px 18px;
-            text-transform: uppercase;
-            border-width: 2px;
-            border-style: solid;
-        }
-        .difficulty-tag.legendary {
-            color: #ffd700;
-            border-color: #ffd700;
-            box-shadow: 0 0 8px #ffd70077;
-            text-shadow: 0 0 4px #ffd700;
-        }
-        .difficulty-tag.insane {
-            color: #ff9900;
-            border-color: #ff9900;
-            box-shadow: 0 0 8px #ff990077;
-            text-shadow: 0 0 4px #ff9900;
-        }
-        .difficulty-tag.hard {
-            color: #00f2ff;
-            border-color: #00f2ff;
-            box-shadow: 0 0 8px #00f2ff77;
-            text-shadow: 0 0 4px #00f2ff;
-        }
-        .difficulty-tag.medium {
-            color: #00ff99;
-            border-color: #00ff99;
-            box-shadow: 0 0 8px #00ff9977;
-            text-shadow: 0 0 4px #00ff99;
-        }
-        .difficulty-tag.easy {
-            color: #b0c4d8;
-            border-color: #b0c4d8;
-            box-shadow: 0 0 8px #b0c4d877;
-            text-shadow: 0 0 4px #b0c4d8;
-        }
-        .boss-name {
-            font-size: 3.7rem;
-            line-height: 1;
-            margin: 0;
-            text-transform: uppercase;
-            color: #00f2ff;
-            text-shadow: 0 0 32px #00f2ff, 0 0 8px #ff00cc, 0 0 2px #fff;
-            font-family: 'Orbitron', 'Segoe UI', sans-serif;
-            letter-spacing: 3px;
-        }
-        .origin-text {
-            color: #ff00cc;
-            margin-bottom: 2rem;
-            font-size: 1.15rem;
-            letter-spacing: 2px;
-            text-shadow: 0 0 8px #ff00cc;
-        }
-        .lore-btn {
-            background: transparent !important;
-            border: 2.5px solid #00f2ff !important;
-            color: #00f2ff !important;
-            font-weight: bold;
-            border-radius: 8px;
-            box-shadow: 0 0 20px 0 #00f2ff, 0 0 8px #ff00cc;
-            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-        }
-        .lore-btn:hover {
-            background: #00f2ff !important;
-            color: #1a0033 !important;
-            box-shadow: 0 0 40px 0 #00f2ff, 0 0 16px #ff00cc;
-        }
-        hr {
-            border: none;
-            border-top: 2.5px solid #00f2ff;
-            margin: 2rem 0;
-            opacity: 0.25;
-        }
-        main.container {
-            background: rgba(10,10,30,0.55);
-            box-shadow: 0 0 32px 0 #00f2ff44, 0 0 8px #ff00cc44;
-            border-radius: 18px;
-            box-shadow: 0 0 32px 0 #00f2ff44, 0 0 8px #ff00cc44;
-            padding: 3rem 2.5rem;
-            margin-bottom: 3rem;
-        }
-</style>
 </head>
 <body>
+    <a class="skip-link" href="#lore-content">Skip to lore content</a>
 
-    <!-- Hero Image Banner -->
     <div class="detail-hero-banner">
-        <img src="/BossRush1.png" alt="BossRush Hero" class="detail-hero-img">
-        <div class="detail-hero-overlay"></div>
+        <img src="/BossRush1.png" alt="" class="detail-hero-img">
     </div>
 
-
-    <nav class="container" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem;"></nav>
-
-    <main class="container" id="lore-content">
-        </main>
+    <main class="container detail-panel" id="lore-content" aria-live="polite" aria-busy="true"></main>
 
     <script src="/detail.js"></script>
 </body>

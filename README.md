@@ -4,7 +4,7 @@ Submitted by: **Tasneem Shabana**
 
 About this web app: **A neon-themed boss bestiary built with Express + vanilla HTML/CSS/JS that lists iconic bosses and provides unique lore detail routes for each one.**
 
-Time spent: **8** hours
+Time spent: **10** hours
 
 ## Required Features
 
@@ -28,10 +28,22 @@ The following **additional** features are implemented:
 - [x] Neon sci-fi visual theme with custom hero banners and boss-specific color accents
 - [x] Separate API endpoints (`/api/bosses`, `/api/bosses/:id`) powering dynamic rendering on list and detail pages
 - [x] Dedicated custom 404 page with themed messaging and return link
+- [x] Accessibility improvements: skip links, focus-visible states, viewport support, and loading/error messaging with `aria-live`/`aria-busy`
+- [x] Refactored frontend structure for readability by consolidating inline styles into shared `style.css`
+- [x] Improved responsive behavior for hero layout and action button placement on smaller screens
+- [x] Enhanced button styling to better match the in-image hero UI aesthetic while preserving keyboard accessibility
+
+## Recent UI/UX Updates
+
+- Home and detail pages now consistently use full-page background coverage with no white gaps
+- Hero action button (`Enter The Void`) received responsive positioning and typography refinements
+- Card/detail visual system was cleaned up with improved contrast and spacing
+- Added more resilient fetch handling (loading and error states) for both list and detail views
+- Imported and normalized typography usage across major headings and CTA elements
 
 ## Video Walkthrough
 
-[![Video Walkthrough](https://i.imgur.com/CweCrzz.gif)](https://imgur.com/CweCrzz)
+![Video Walkthrough](videos/BossRush%20(1).gif)
 
 ## Notes
 
