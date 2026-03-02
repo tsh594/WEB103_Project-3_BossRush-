@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-[![Video Walkthrough](videos/BossRush%20(1).gif)](https://imgur.com/CweCrzz)
+[Video Walkthrough (Imgur)](https://imgur.com/CweCrzz)
 
 ## Notes
 
