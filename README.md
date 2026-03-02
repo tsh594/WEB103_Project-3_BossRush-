@@ -31,13 +31,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-GitHub README pages do not reliably render local `<video>` tags. Use the link below to watch the walkthrough:
-
-[Watch the video walkthrough](./videos/BossRush.mp4)
-
-[![Boss Rush Walkthrough](./public/BossRush.png)](./videos/BossRush.mp4)
-
-Walkthrough file: `videos/BossRush.mp4`
+[Imgur](https://imgur.com/CweCrzz)
 
 ## Notes
 
@@ -52,3 +46,4 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 > http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+

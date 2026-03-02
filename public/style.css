@@ -17,6 +17,16 @@
     box-sizing: border-box;
 }
 
+.detail-hero-banner::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 3px solid rgba(0, 242, 255, 0.45);
+    box-shadow: 0 0 38px rgba(0, 242, 255, 0.55);
+    pointer-events: none;
+    z-index: 3;
+}
+
 .detail-hero-img {
     width: 100%;
     min-width: 100%;
@@ -45,7 +55,7 @@
 
 .detail-hero-title {
     position: relative;
-    z-index: 3;
+    z-index: 4;
     color: #00f2ff;
     font-size: 3.2rem;
     font-family: 'Orbitron', 'Segoe UI', sans-serif;
