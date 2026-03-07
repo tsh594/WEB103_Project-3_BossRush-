@@ -34,7 +34,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of the implemented required features:
 
 ![Video Walkthrough](videos/walkthrough.gif)
 
