@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 - [x] Unique boss detail endpoints (`/bosses/:id`) with dynamic content loaded from PostgreSQL
 - [x] Custom API routes for list and detail data (`/api/bosses`, `/api/bosses/:id`)
 - [x] Case-insensitive search using SQL `ILIKE` over multiple attributes (`name`, `title`, `game`)
-- [x] Featured Boss CTA with deterministic daily rotation and Legendary-weighted selection
+- [x] Featured Boss CTA that changes every day (deterministic daily rotation) with Legendary-weighted selection
 - [x] Custom 404 page and custom detail-level 404 state for missing boss IDs
 - [x] Enhanced accessibility: skip links, focus-visible styling, and `aria-live`/`aria-busy` states for async loading
 - [x] Responsive hero/button layout tuning and neon UI system with custom theme tokens
