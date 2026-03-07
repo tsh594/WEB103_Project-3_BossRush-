@@ -38,6 +38,8 @@ Here's a walkthrough of the implemented required features:
 
 ![Video Walkthrough](videos/walkthrough.gif)
 
+Optional higher-quality version: [walkthrough_original_179mb.gif](videos/walkthrough_original_179mb.gif)
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with **ScreenToGif**
 <!-- Recommended tools:
