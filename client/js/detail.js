@@ -12,20 +12,49 @@ const bossThemeClass = (name) => {
   return map[name] || '';
 };
 
-const resolveImagePath = (image) => (image.startsWith('http') ? image : `/${image}`);
+const resolveImagePath = (image) => (image.startsWith('http') ? image : `/assets/${image}`);
 
 const container = document.getElementById('lore-content');
 container.innerHTML = '<p class="notice">Loading boss profile...</p>';
 
-const renderError = () => {
+const handleGoBack = () => {
+  if (window.history.length > 1) {
+    window.history.back();
+    return;
+  }
+
+  window.location.href = '/';
+};
+
+const renderError = (status) => {
+  const isNotFound = status === 404;
+  const message = isNotFound
+    ? 'That boss does not exist in the archives.'
+    : 'Unable to load this boss profile right now. Please return and try again.';
+
   container.setAttribute('aria-busy', 'false');
-  container.innerHTML = '<p class="notice error">Unable to load this boss profile right now. Please return and try again.</p>';
+  container.innerHTML = `
+    <div class="notice error detail-error">
+      <p class="detail-error-kicker">Archive Error 404</p>
+      <h2 class="detail-error-title">Boss Entry Not Found</h2>
+      <p class="detail-error-message">${message}</p>
+      <div class="detail-error-actions">
+        <a href="/" class="notice-action-btn notice-action-primary">Return to Bestiary</a>
+        <button type="button" id="go-back-btn" class="notice-action-btn notice-action-secondary">Go Back</button>
+      </div>
+    </div>
+  `;
+
+  const goBackBtn = document.getElementById('go-back-btn');
+  if (goBackBtn) {
+    goBackBtn.addEventListener('click', handleGoBack);
+  }
 };
 
 fetch(`/api/bosses/${bossId}`)
   .then((res) => {
     if (!res.ok) {
-      throw new Error('Failed to fetch boss profile');
+      throw new Error(String(res.status));
     }
 
     return res.json();
@@ -53,4 +82,7 @@ fetch(`/api/bosses/${bossId}`)
       </div>
     `;
   })
-  .catch(renderError);
+  .catch((error) => {
+    const status = Number(error.message);
+    renderError(Number.isNaN(status) ? undefined : status);
+  });
