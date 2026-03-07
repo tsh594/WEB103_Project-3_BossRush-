@@ -51,6 +51,13 @@ One challenge was balancing the neon visual style with responsive readability, e
 
 Another important lesson was managing Render Postgres connection values correctly for local development (`External Hostname`) vs deployed services (`Internal Hostname`).
 
+If you clone this repository on another machine, run the following so LFS-tracked media downloads correctly:
+
+```bash
+git lfs install
+git lfs pull
+```
+
 Setup and verification commands used:
 
 ```bash
