@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of the implemented required features:
 
-![Video Walkthrough](https://github.com/tsh594/WEB103_Project-2_BossRush/blob/main/videos/walkthrough.gif?raw=1)
+![Video Walkthrough](videos/walkthrough.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with **ScreenToGif**
