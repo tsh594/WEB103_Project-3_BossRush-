@@ -2,7 +2,7 @@
 
 Submitted by: **Tasneem Shabana**
 
-About this web app: **Boss Rush Bestiary is a full-stack web app where users browse a database-backed list of video game bosses, search by attributes, and open dedicated detail pages for each boss. The app uses HTML, CSS, and JavaScript on the frontend, with an Express + PostgreSQL backend.**
+About this web app: **I built Boss Rush Bestiary as a full-stack web app where users can browse a database-backed list of video game bosses, search by attributes, and open dedicated detail pages for each boss. I used HTML, CSS, and JavaScript on the frontend with an Express + PostgreSQL backend.**
 
 Time spent: **10** hours
 
@@ -47,9 +47,9 @@ GIF created with **ScreenToGif**
 
 ## Notes
 
-One challenge was balancing the neon visual style with responsive readability, especially for hero CTA placement and typography across breakpoints. Another challenge was tuning PostgreSQL search behavior so partial matches felt intuitive while still returning relevant boss entries.
+One challenge I ran into was balancing the neon visual style with responsive readability, especially around hero CTA placement and typography across breakpoints. Another challenge was tuning PostgreSQL search behavior so partial matches felt intuitive while still returning relevant boss entries.
 
-Another important lesson was managing Render Postgres connection values correctly for local development (`External Hostname`) vs deployed services (`Internal Hostname`).
+Another important lesson for me was managing Render Postgres connection values correctly for local development (`External Hostname`) vs deployed services (`Internal Hostname`).
 
 If you clone this repository on another machine, run the following so LFS-tracked media downloads correctly:
 
