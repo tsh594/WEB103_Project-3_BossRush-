@@ -37,9 +37,9 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-![Video Walkthrough](videos/walkthrough_compressed_80mb.gif)
+![Video Walkthrough](videos/walkthrough_compressed_164mb.gif)
 
-[Full-resolution original (~328 MB)](videos/walkthrough_original_328mb.gif)
+[Smaller quick-load version (~72 MB)](videos/walkthrough_compressed_80mb.gif) · [Full-resolution original (~328 MB)](videos/walkthrough_original_328mb.gif)
 
 ### Database Evidence (psql + dashboard)
 
