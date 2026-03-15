@@ -1,15 +1,18 @@
 const express = require('express');
 const path = require('path');
+const cors = require('cors');
 const pool = require('./config/database');
+const eventsRouter = require('./routes/events');
+const locationsRouter = require('./routes/locations');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const clientDistPath = path.join(__dirname, '../client/dist');
+const clientAssetsPath = path.join(__dirname, '../client/assets');
 
-// 1. Serve static files from 'client' folder
-// This makes /css/style.css and /js/detail.js available
-app.use(express.static(path.join(__dirname, '../client')));
-app.use('/assets', express.static(path.join(__dirname, '../client/assets')));
+app.use(cors());
+app.use(express.json());
 
 /**
  * 📡 API ROUTES
@@ -51,21 +54,23 @@ app.get('/api/bosses/:id', async (req, res) => {
     }
 });
 
-/**
- * 🌐 HTML ROUTES
- */
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client', 'index.html'));
+app.use('/api/events', eventsRouter);
+app.use('/api/locations', locationsRouter);
+
+app.use('/api', (req, res) => {
+    res.status(404).json({ error: 'API route not found' });
 });
 
-// This route serves the detail page
-app.get('/bosses/:id', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client', 'detail.html'));
+app.use('/assets', express.static(clientAssetsPath));
+app.use(express.static(clientDistPath));
+
+app.get(/^(?!\/api).*/, (req, res) => {
+    res.sendFile(path.join(clientDistPath, 'index.html'));
 });
 
 // 404 Handler (MUST be last)
 app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, '../client', '404.html'));
+    res.status(404).json({ error: 'Route not found' });
 });
 
 app.listen(PORT, () => {

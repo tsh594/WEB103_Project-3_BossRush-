@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "reset": "node server/config/reset.js",
+    "build:client": "npm --prefix client run build",
     "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +14,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "pg": "^8.19.0"

@@ -1,36 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>BossRush: Neon Void</title>
-</head>
-<body>
-    <a class="skip-link" href="#boss-container">Skip to boss list</a>
-
-    <header class="hero">
-        <div class="hero-text-box">
-            <div class="hero-actions">
-                <a id="enter-void-btn" href="#boss-container" class="hero-btn hero-btn-primary">
-                    <span class="wide-text">Enter The Void</span>
-                </a>
-                <a id="featured-boss-btn" href="/bosses/malenia" class="hero-btn hero-btn-secondary">
-                    <span class="wide-text">Featured Boss</span>
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="search-wrapper">
-            <input type="text" id="boss-search" class="neon-search" placeholder="Search by name, title, or game..." aria-label="Search bosses">
-        </div>
-
-        <div id="boss-container" class="bestiary-grid is-loading" aria-live="polite" aria-busy="true"></div>
-    </main>
-
-    <script src="/js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <base href="/" />
+    <title>Boss Rush Community Space</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.jsx"></script>
+  </body>
 </html>
