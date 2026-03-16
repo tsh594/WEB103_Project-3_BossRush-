@@ -43,7 +43,7 @@ Here's a walkthrough of implemented required features:
 
 ### Database Evidence (psql + dashboard)
 
-**Render dashboard:** the walkthrough GIF above includes a pass showing the Render PostgreSQL instance in an "Available" state (see around the mid-sequence before the terminal clip).
+**Render dashboard:** the walkthrough GIF shows the Render PostgreSQL instance in an "Available" state at the start of the sequence, before the terminal clip.
 
 **psql table outputs:** captured during the same walkthrough for quick reference.
 
